@@ -1,0 +1,447 @@
+@media screen and (max-width: 1440px) {
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 38px;
+  }
+
+  .social h5 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .modelbox .about .name {
+    font-size: 32px;
+  }
+
+  .modelbox .about .amount {
+    font-size: 18px;
+  }
+
+  .modelgridbox h3 {
+    font-size: 36px;
+  }
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 36px;
+  }
+
+  .social h5 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .carousel2 h5 {
+    font-size: 36px;
+  }
+
+  .links h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .models {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .modelbox {
+    height: 37.499dvw;
+    padding: .6rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .carousel2 h5 {
+    font-size: 32px;
+  }
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 32px;
+  }
+
+  .social h5 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .carousel-caption p {
+    padding-left: 3.5%;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 86px;
+  }
+
+  .modelgridbox h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width:1021px) {
+  .footIn {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 67%;
+    grid-row-gap: 5rem;
+  }
+  .share{
+    margin-top: .5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel2 h5 {
+    font-size: 30px;
+  }
+
+  .modelbox .about .name {
+    font-size: 30px;
+  }
+
+  .car718 {
+    background-image: url("grid\ ph1.webp");
+  }
+
+  .car911 {
+    background-image: url("grid\ ph2.webp");
+  }
+
+  .taycan {
+    background-image: url("grid\ ph6.webp");
+  }
+
+  .panamera {
+    background-image: url("grid\ ph5.webp");
+  }
+
+  .macan {
+    background-image: url("grid\ ph4.webp");
+  }
+
+  .cayanne {
+    background-image: url("grid\ ph3.webp");
+  }
+
+  .modelbox {
+    height: 56.247dvw;
+    /* padding: .6rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .modelgridbox h3 {
+    font-size: 30px;
+  }
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 30px;
+  }
+
+  .social h5 {
+    font-size: 30px;
+  }
+
+  .inshop {
+    grid-template-columns: 50% 25% 25%;
+    height: 24.2045vw;
+  }
+
+  .shop {
+    width: 86%;
+  }
+
+  .dIn {
+    grid-template-columns: repeat(4, 50%);
+    grid-template-rows: 1fr;
+    overflow: hidden;
+  }
+
+  .indidis1 {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    visibility: visible;
+  }
+
+  .indidis2 {
+    visibility: hidden;
+  }
+
+  .iDbtn {
+    border: none;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgb(49, 54, 57);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .activeindicator {
+    background-color: rgb(213, 0, 28);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+
+  nav {
+    height: 82px;
+  }
+
+  .carousel2 h5 {
+    font-size: 28px;
+  }
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 28px;
+  }
+
+  .social h5 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .vid {
+    pointer-events: none;
+  }
+
+  .carousel2 {
+    margin-bottom: .5rem;
+  }
+  .carousel-caption p {
+    padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .name2 {
+    display: flex;
+  }
+
+  .about {
+    visibility: hidden;
+  }
+
+  .build,
+  .allmodels {
+    display: none;
+  }
+
+  .modelbox {
+    border-image: fill 1 linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  }
+
+  .inshop {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 96.53vw;
+  }
+
+  .sho1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .sho2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .sho3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+@media screen and (max-width: 764px) {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .socialIn {
+    grid-template-columns: 50% 50%;
+    height: 57.3vw;
+  }
+
+  .posts2 {
+    height: 57.3vw;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .name2 {
+    font-size: 20px;
+  }
+
+  .modelgridbox h3 {
+    font-size: 26px;
+  }
+
+  .carousel2 h5 {
+    font-size: 26px;
+  }
+
+  .shoptools h5,
+  .discover h5 {
+    font-size: 26px;
+  }
+
+  .social h5 {
+    font-size: 26px;
+  }
+  .footIn {
+    grid-row-gap: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+  .carousel-inner {
+    height: 110vw;
+  }
+
+  .carousel-item {
+    height: 110vw;
+  }
+
+  .cph {
+    height: 110vw;
+    background-position: center center;
+  }
+
+  nav {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .carousel-caption h5 {
+    font-size: 34px;
+  }
+
+  .carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4rem;
+    padding-left: 24px;
+  }
+  .accordion-button:active {
+    background-color: rgb(196, 224, 255);
+  }
+}
+@media screen and (max-width:540px) {
+  .foothr{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .carousel2 h5 {
+    font-size: 24px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 30px;
+  }
+
+  .carousel-caption p {
+    padding-left: 22px;
+  }
+
+  .name2 {
+    margin-bottom: 1.1rem;
+    margin-left: .2rem;
+  }
+
+  .shoptools h5 {
+    font-size: 24px;
+  }
+
+  .modelgridbox h3 {
+    font-size: 24px;
+  }
+
+  .social h5,
+  .discover h5 {
+    font-size: 24px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .carousel2 {
+    gap: 0;
+  }
+
+  .socialIn {
+    grid-template-columns: 100%;
+    height: 120.4vw;
+  }
+
+  .dIn {
+    grid-template-columns: repeat(4, 100%);
+    grid-template-rows: 1fr;
+    overflow: hidden;
+  }
+
+  .indidis1 {
+    visibility: hidden;
+  }
+
+  .indidis2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    visibility: visible;
+  }
+
+  .iDbtn {
+    border: none;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgb(49, 54, 57);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .activeindicator {
+    background-color: rgb(213, 0, 28);
+  }
+}
+
+@media screen and (max-width:400px) {
+  .name2 {
+    margin-bottom: .8rem;
+    margin-left: 0;
+  }
+}

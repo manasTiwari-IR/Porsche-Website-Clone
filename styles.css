@@ -1,0 +1,481 @@
+@font-face {
+  font-family: Porsche Next;
+  src: url(porsche-next-regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Porsche Next Bold;
+  src: url(porsche-next-bold.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: Porsche Next Semi Bold;
+  src: url(porsche-next-semibold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Porsche Next Light;
+  src: url(porsche-next-light.otf);
+  font-weight: lighter;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Porsche Next Light, sans-serif;
+  background-color: transparent;
+  /* z-index: -2; */
+}
+.logo svg {
+  fill: black;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  position: static;
+  background-color: white;
+  max-width: 2560px;
+  width: 100%;
+  height: 90px;
+  /* height: 100%; */
+  margin: auto;
+  margin-top: 0;
+  padding: 0.5rem;
+}
+.menubtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: Porsche Next Light;
+  cursor: pointer;
+  z-index: 10;
+  margin: 8.5px;
+  padding: 3px;
+  height: 2rem;
+  margin-left: 4vw;
+}
+.menubtn {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-self: start;
+  gap: 5px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.menubtn:hover {
+  background-color: #eeecec;
+}
+.bi {
+  margin: auto;
+}
+.menu {
+  padding-top: 3px;
+  text-align: center;
+  margin: auto;
+}
+.logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-self: center;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-shrink: 1;
+}
+
+/* Carousel CSS  */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+.carousel-item {
+  position: relative;
+  /* display: none; */
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+.cph {
+  height: auto;
+  background-position: center center;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 5%;
+  padding: 0;
+  /* color: #fff; */
+  text-align: center;
+  opacity: 1;
+  background: 0 0;
+  border: 0;
+  visibility: visible;
+  transition: all 0.24s;
+}
+s .carousel-control-prev {
+  justify-content: flex-start;
+  left: 1vw;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+  right: 1vw;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+.controlsDiv {
+  padding: 15px 15px 8px 15px;
+  opacity: 0;
+  background-color: white;
+  box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 7.875px;
+  /* color:#fff; */
+  transition: all 0.24s;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.carousel1:hover * .controlsDiv {
+  opacity: 1;
+}
+.carousel1:active * .controlsDiv {
+  opacity: 1;
+}
+.carousel-control-next:hover .controlsDiv {
+  opacity: 1;
+  background-color: rgb(213, 0, 28);
+  /* background-color: red; */
+}
+.carousel-control-prev:hover .controlsDiv {
+  opacity: 1;
+  background-color: rgb(213, 0, 28);
+}
+.carousel-control-next:hover * .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.carousel-control-prev:hover * .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.carousel1 {
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 0.3rem;
+  margin-left: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgb(200, 202, 203);
+  background-clip: padding-box;
+  border: 0;
+  margin: 6px 12px 6px 6px;
+  opacity: 1;
+  cursor: default;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  /* transition: all .2s ; */
+}
+
+.carousel-indicators .active {
+  background-color: rgb(213, 0, 28);
+}
+
+.carousel-caption h5::before {
+  font-family: cursive;
+  content: "> ";
+  color: rgb(213, 0, 28);
+  text-align: center;
+}
+/* .carousel-caption p::before{
+  content:'> ';
+  color:transparent
+} */
+.carousel-caption h5 {
+  font-family: Porsche Next Semi Bold;
+  /* font-size: 46px; */
+  /* font-size: clamp(1.875rem, 1.5893rem + 1.4286vw, 2.875rem); */
+  font-size: clamp(2rem, 1.375rem + 1.6667vw, 2.875rem);
+  text-align: left;
+  margin: 0;
+  line-height: 2rem;
+  transition: all 0.4s;
+}
+.carousel-caption:hover {
+  color: rgb(213, 0, 28);
+}
+.carousel-caption p {
+  font-family: Porsche Next Semi Bold;
+  /* font-size: 26px; */
+  /* font-size: clamp(1.25rem, 1.1429rem + 0.5357vw, 1.625rem); */
+  font-size: clamp(1.375rem, 1.1964rem + 0.4762vw, 1.625rem);
+  text-align: left;
+  padding-left: 3.1%;
+  margin-top: .4rem;
+  transition: all 0.4s;
+}
+/* .carousel-caption p:hover {
+  color: rgb(213, 0, 28);
+} */
+
+.carousel-caption {
+  position: absolute;
+  bottom: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.35rem;
+  left: 5%;
+  color: #fff;
+  text-align: center;
+}
+
+/* MODELS */
+.modelgridbox {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin: auto;
+}
+.modelgridbox h3 {
+  align-self: flex-start;
+  font-size: 38px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+  font-family: Porsche Next Semi Bold;
+  color: black;
+  margin: auto;
+  margin-left: 7%;
+  margin-top: 1.8rem;
+}
+.models {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0;
+  width: 100%;
+  /* padding: 1rem; */
+}
+.modelbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 24.8dvw;
+  background-color: transparent;
+  padding: 1rem;
+  padding-left: 1.8rem;
+  padding-bottom: 1.7rem;
+  border-image: fill 1
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.car718 {
+  background-image: url("sm\ grid\ ph1.webp");
+}
+.car911 {
+  background-image: url("sm\ grid\ ph2.webp");
+}
+.taycan {
+  background-image: url("sm\ grid\ ph6.webp");
+}
+.panamera {
+  background-image: url("sm\ grid\ ph5.webp");
+}
+.macan {
+  background-image: url("sm\ grid\ ph4.webp");
+}
+.cayanne {
+  background-image: url("sm\ grid\ ph3.webp");
+}
+.modelbox{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.modelbox .about .name,
+.modelbox .about .amount {
+  font-family: Porsche Next Semi Bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.modelbox .about .name {
+  font-size: 34px;
+  line-height: 35px;
+}
+.modelbox .about .amount {
+  font-size: 20px;
+}
+.modelbox .buttons .build {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+  padding: 13px 25px;
+  transition: all 0.24s ease;
+}
+.modelbox .buttons .allmodels {
+  margin-left: 7px;
+  font-size: 16px;
+  border: 1px solid white;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: white;
+  color: white;
+  background-color: transparent;
+  padding: 11px 21px;
+  transition: all 0.24s ease;
+}
+.modelbox .buttons .allmodels .icon,
+.modelbox .buttons .build .icon {
+  width: 16px;
+  height: 16px;
+  transition: all 0.24s;
+}
+.modelbox .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  gap: 3px;
+  align-items: center;
+}
+.allmodels {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+}
+.build {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.modelbox .buttons .build:hover {
+  background-color: rgb(213, 0, 28);
+  color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: white;
+}
+.modelbox .buttons .allmodels:hover {
+  border-color: rgb(213, 0, 28);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: rgb(213, 0, 28);
+  color: rgb(213, 0, 28);
+}
+.modelbox .buttons .allmodels .icon {
+  fill: white !important;
+}
+.modelbox .buttons .allmodels:hover .icon {
+  fill: red !important;
+}
+.modelbox .buttons .build:hover .icon #primary {
+  transition: all 0.24s ease;
+  stroke: white !important;
+}
+.modelbox .buttons .build:hover .icon #primary-2 {
+  transition: all 0.24s ease;
+  stroke: white !important;
+}
+.modelbox .buttons .build:hover .icon #primary-3 {
+  transition: all 0.24s ease;
+  stroke: white !important;
+}
+.disclamer {
+  font-size: 14px;
+  color: black;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+  padding-left: 8vw;
+  align-self: flex-start;
+  text-align: left;
+}
+.name2{
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: Porsche Next Semi Bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  margin-left: .7rem;
+  gap:3px;
+}
+.name2 .icon{
+  width: 16px;
+  height: 16px;
+  fill: rgb(213, 0, 28); 
+}
