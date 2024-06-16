@@ -231,7 +231,7 @@
     margin-bottom: .5rem;
   }
   .carousel-caption p {
-    padding-left: 4%;
+    padding-left: 4.8%;
   }
 }
 
@@ -353,6 +353,9 @@
   .accordion-button:active {
     background-color: rgb(196, 224, 255);
   }
+    .carousel-caption p {
+    padding-left: 5.1%;
+  }
 }
 @media screen and (max-width:540px) {
   .foothr{
@@ -370,7 +373,7 @@
   }
 
   .carousel-caption p {
-    padding-left: 22px;
+    padding-left: 26px;
   }
 
   .name2 {
